@@ -1,0 +1,78 @@
+body {font-family: Arial;}
+html {background-color:#e6ffe6}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc; /*ccc*/
+  background-color: #b9ffe7; /*f1f1f1*/
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #99ffdd;/*#ddd;*/
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #7fffd4;/*#ccc;*/
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#main-header{
+      text-align:center;
+      background-color:palegreen;
+      color:white;
+      padding:10px;
+}
+#main-footer{
+      text-align:center;
+      font-size:18px;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+/*Setup for Rows*/
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+/*Secondary Header Format*/
+h2 {
+    font-weight: normal;
+    font-size: 18px;
+}

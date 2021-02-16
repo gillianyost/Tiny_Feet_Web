@@ -1,94 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tiny Feet Toolkit</title>
+<title>Tiny Feet Climate Action Planning Toolkit</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Climate Action Plan, toolkit, Green House Gas Emissions, Colorado, Tiny Feet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: Arial;}
-html {background-color:#e6ffe6}
+<link rel="stylesheet" type="text/css" href="style.css">
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc; /*ccc*/
-  background-color: #b9ffe7; /*f1f1f1*/
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #99ffdd;/*#ddd;*/
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #7fffd4;/*#ccc;*/
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-#main-header{
-      text-align:center;
-      background-color:green;
-      color:white;
-      padding:10px;
-}
-#main-footer{
-      text-align:center;
-      font-size:18px;
-}
-
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
-
-</style>
 </head>
 <body>
   <header id="main-header">
-    <h1>Tiny Feet Toolkit</h1>
+    <h1>Tiny Feet Climate Action Planning Toolkit</h1>
   </header>
-<center><p>A toolkit to help create Climate Action Plans</p></center>
+<center><p>A toolkit to help communities begin the process of creating a Climate Action Plan</p></center>
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
   <button class="tablinks" onclick="openTab(event, 'Emissions Estimation')">Emissions Estimation</button>
-  <button class="tablinks" onclick="openTab(event, 'Recommend Actions')">Recommend Actions</button>
-  <button class="tablinks" onclick="openTab(event, 'Toolkit')">Toolkit</button>
+  <button class="tablinks" onclick="openTab(event, 'Recommended Actions')">Recommended Actions</button>
   <button class="tablinks" onclick="openTab(event, 'News')">News</button>
 </div>
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
-  <p>Home will have general about us. This includes Background, and an Overview and How to do things</p>
+  <p>Home will have general information about us and the project. This includes Background Information, and an Overview and Instructions</p>
+  <br>
+  <p>Background Information
+  <br>
+  <p>Toolkit Overview
+  <br>
+  <p>Instructions
+  <br>
   <a href="blastersmall.png">
       <img src="blastersmall.png" alt="Blaster Logo" width="200">
     </a>
@@ -99,26 +41,15 @@ html {background-color:#e6ffe6}
 
 <div id="Emissions Estimation" class="tabcontent">
   <h3>Emissions Estimation</h3>
-  <p>Emissions Estimation will display a heat map of Colorado by zip code with the data from out database. It will also have an option to download the data from our database?</p> 
+  <p>Emissions Estimation will display a heat map of Colorado by zip code with the data from out database. It will then take in the user region ID and display emissions totals and holistic metrics. It will also have an option to download the data from our database?</p> 
 
   <iframe src="http://tinyfeettoolkit.com/map/" style="height:45vw;width:100%;" title="Iframe Example"></iframe>
   <br>
   <br>
   <br>
-  <button class="btn"><i class="fa fa-download"></i> Download All Data</button>
-</div>
-
-<div id="Recommend Actions" class="tabcontent">
-  <h3>Recommend Actions</h3>
-  <p>Recommend Actions will list an explanation of all recommended actions and their impact. It shows the general recommendations we will provide on the website as well as our sources for all recommendations. Finally it will have links to other actions and resources.</p>
-</div>
-
-<div id="Toolkit" class="tabcontent">
-  <h3>Toolkit</h3>
-  <p>Community Action and Emissions will have the input of the user's zip, city, or county and display in a table, pie chart, etc the emissions of that region. There will be an option to export the region specific data as well. Then the user will fill out an action survey and will be provided recommended community actions based on emission results and survey data.</p>
-
-      <!-- Forms-->
-    <form action="Gillian-test-3.php" method="post">
+  
+  <!-- User Region Input -->
+  <form action="Gillian-test-3.php" method="post">
       <div>
         <label>Zip Code/City/County</label>
         <input type="number" name="region_ID" placeholder="Enter Location">
@@ -126,50 +57,57 @@ html {background-color:#e6ffe6}
       </div>
       <br>
     </form>
-    <form action="fake.php" mehtod="post">
-      <h4>Action Survey</h4>
-      <div>
-        <label>Question01:</label>
-        <input type="text" name="Question01" placeholder="answer">
-      </div>
-      <br>
-      <div>
-        <label>Question02:</label>
-        <input type="text" name="Question02" placeholder="answer">
-      </div>
-      <br>
-      <div>
-        <label>Long Response:</label>
-        <textarea name="message" placeholder="Enter Message Here"></textarea>
-      </div>
-      <br>
-      <div>
-        <label>Question03:</label>
-        <select name="Question03">
-          <option value="answer01">answer01</option>
-          <option value="answer02">answer02</option>
-          <option value="answer03">answer03</option>
-        </select>
-      </div>
-      <br>
-        <div>
-          <label>Number Question04:</label>
-          <input type="number" name="Question04" placeholder="###">
-        </div>
-        <br>
-        <div>
-          <label>Date Question?:</label>
-          <input type="date" name="birthday">
-        </div>
-        <br>
-        <input type="submit" name="submit" value="Submit">
+    <form action="Gillian-test-3.php" method="post">
     </form>
 
+  
+  <button class="btn"><i class="fa fa-download"></i> Download All Data</button>
 </div>
 
+<div id="Recommended Actions" class="tabcontent">
+  <h3>Recommended Actions</h3>
+  <p>Recommended Actions will list an explanation of all recommended actions and their impact. It shows the general recommendations we will provide on the website as well as our sources for all recommendations. Finally it will have links to other actions and resources.</p>
+  <!-- Checkbox Filters for Holistic Metrics and -->
+  <div class="row">
+    <div class="column">
+      <br>
+      <h2> Filter by Holistic Community Metric</h2>
+      <p>I want to see solutions that support: </p>
+      <input type="checkbox" id="filter1" name="filter1" value="Equity">
+      <label for="filter1"> Equity</label><br>
+      <input type="checkbox" id="filter2" name="filter2" value="Local Environmental Quality">
+      <label for="filter2"> Local Environmental Quality</label><br>
+      <input type="checkbox" id="filter3" name="filter3" value="Enhancing Public Health & Safety">
+      <label for="filter3"> Enhancing Public Health and Safety</label><br>
+      <input type="checkbox" id="filter4" name="filter4" value="Building Community Resilience">
+      <label for="filter4"> Building Community Resilience</label><br>
+      <br>
+    </div>
+    <div class="column">
+      <br>
+      <h2>Filter by Emissions Sector</h2>
+      <p>I want to see solutions that reduce emissions from: </p>
+      <input type="checkbox" id="filter5" name="filter5" value="Cement and Manufacturing">
+      <label for="filter5"> Cement and Manufacturing</label><br>
+      <input type="checkbox" id="filter6" name="filter6" value="Waste">
+      <label for="filter6"> Waste</label><br>
+      <input type="checkbox" id="filter7" name="filter7" value="Energy - Electricity">
+      <label for="filter7"> Energy - Electricity</label><br>
+      <input type="checkbox" id="filter8" name="filter8" value="Energy - Natural Gas">
+      <label for="filter8"> Energy - Natural Gas</label><br>
+      <input type="checkbox" id="filter9" name="filter9" value="Transportation">
+      <label for="filter9"> Transportation</label><br>
+      <br>
+    </div>
+  </div>
+
+  <p>List of Solutions Selected for your Community</p>
+  <!--Display Recommendations Based on Filters and Emissions/Metrics Data-->
+</div> 
+  
 <div id="News" class="tabcontent">
   <h3>News</h3>
-  <p>Relevant news articles and other resources.</p>
+  <p>Relevant news articles and other resources such as Chris Menges' CAP report.</p>
 </div>
 
 <script>
