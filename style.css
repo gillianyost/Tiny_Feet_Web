@@ -76,3 +76,18 @@ h2 {
     font-weight: normal;
     font-size: 18px;
 }
+
+/*Pie Chart*/
+.piechart { 
+  
+  margin-top: 50px; 
+  display: block; 
+  position: relative; 
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  background-image: conic-gradient( 
+      pink 70deg,  
+      lightblue 0 235deg,  
+      orange 0); 
+}
